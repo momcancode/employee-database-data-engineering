@@ -9,7 +9,7 @@ The database consists of 6 tables imported from 6 csv files provided by Monash U
 
 1. Inspect the csv files to design an ER diagram using this [tool](http://www.quickdatabasediagrams.com).
 
-    Here is the [ERD](EmployeeSQL/QuickDBD-Employee Diagram.png).
+   ![ERD](EmployeeSQL/ERD.png)
 
 2. Use the [schema](EmployeeSQL/schema.sql) to create tables in a Postgresql database
 
