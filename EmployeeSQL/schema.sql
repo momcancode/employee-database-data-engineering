@@ -8,7 +8,10 @@ CREATE TABLE "departments" (
     "dept_name" VARCHAR(30)   NOT NULL,
     CONSTRAINT "pk_departments" PRIMARY KEY (
         "dept_no"
-     )
+     ),
+    CONSTRAINT "uc_departments_dept_name" UNIQUE (
+        "dept_name"
+    )
 );
 
 CREATE TABLE "dept_emp" (
@@ -53,7 +56,10 @@ CREATE TABLE "titles" (
     "title" VARCHAR(30)   NOT NULL,
     CONSTRAINT "pk_titles" PRIMARY KEY (
         "title_id"
-     )
+     ),
+    CONSTRAINT "uc_titles_title" UNIQUE (
+        "title"
+    )
 );
 
 ALTER TABLE "dept_emp" ADD CONSTRAINT "fk_dept_emp_emp_no" FOREIGN KEY("emp_no")

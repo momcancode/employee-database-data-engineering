@@ -55,6 +55,8 @@ ON dm.emp_no = e.emp_no;
 
 -- List the department of each employee with the following information: employee number, last name, first name, and department name.
 
+DROP VIEW IF EXISTS employee_department;
+
 CREATE VIEW employee_department AS
 SELECT
 	e.emp_no,
@@ -89,8 +91,7 @@ WHERE dept_name = 'Sales';
 
 SELECT *
 FROM employee_department
-WHERE dept_name = 'Sales'
-OR dept_name = 'Development';
+WHERE dept_name IN ('Sales', 'Development');
 
 -- In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
 
