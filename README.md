@@ -27,3 +27,8 @@ The database consists of 6 tables imported from 6 csv files provided by Monash U
 * In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
 
 4. Import the SQL database into Pandas using SQLAlchemy. Use pandas and matplotlib to visualise and analysis the salary data. Please refer to the [notebook](EmployeeSQL/bonus_analysis.ipynb).
+
+---
+Contact:
+
+Email: thao.ph.ha@gmail.com
